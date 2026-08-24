@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Matrika Gupta | CSE AI & Data Science Student</title>
+    <meta name="title" content="Matrika Gupta | CSE AI & Data Science Student" />
+    <meta 
+      name="description" 
+      content="Portfolio of Matrika Gupta, a B.Tech Computer Science & Engineering student specializing in Artificial Intelligence & Data Science at REVA University, Bangalore." 
+    />
+    <meta name="keywords" content="Matrika Gupta, Portfolio, AI, Data Science, CSE, REVA University, Bangalore, BinWise, Noise Detector, IoT, Student Developer" />
+    <meta name="author" content="Matrika Gupta" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Matrika Gupta | CSE AI & Data Science Student" />
+    <meta property="og:description" content="Portfolio of Matrika Gupta, B.Tech CSE (AI & Data Science) student at REVA University, Bangalore." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%234f46e5'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-size='44' font-weight='800' fill='white'>MG</text></svg>" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+    <!-- Inline Script to prevent FOUC for theme preferences -->
+    <script>
+      (function() {
+        try {
+          const storedTheme = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+            document.documentElement.classList.add('dark');
+            const metaTheme = document.querySelector('meta[name="color-scheme"]');
+            if (metaTheme) metaTheme.content = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            const metaTheme = document.querySelector('meta[name="color-scheme"]');
+            if (metaTheme) metaTheme.content = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white transition-colors duration-200 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
